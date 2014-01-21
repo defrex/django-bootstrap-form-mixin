@@ -25,6 +25,8 @@ setup(
     author_email='aron.jones@gmail.com',
     packages=find_packages(),
     version=version,
+    include_package_data=True,
+    zip_safe=False,
     install_requires=[
         'Django>=1.5',
     ],
