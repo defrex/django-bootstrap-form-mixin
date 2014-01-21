@@ -1,2 +1,2 @@
 prune example
-graft bootstrap_form/templates
+graft bootstrap_form/templates/bootstrap_form/
