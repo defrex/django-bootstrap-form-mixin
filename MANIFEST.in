@@ -1,2 +1,2 @@
-global-include *.html *.py
 prune example
+graft bootstrap_form/templates

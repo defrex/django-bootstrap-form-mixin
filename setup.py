@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from __future__ import print_function
-from setuptools import setup
+from setuptools import setup, find_packages
 import re
 
 
@@ -23,7 +23,7 @@ setup(
     license='BSD',
     author='Aron Jones',
     author_email='aron.jones@gmail.com',
-    packages=['bootstrap_form'],
+    packages=find_packages(),
     version=version,
     install_requires=[
         'Django>=1.5',
