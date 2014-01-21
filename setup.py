@@ -23,11 +23,7 @@ setup(
     license='BSD',
     author='Aron Jones',
     author_email='aron.jones@gmail.com',
-    packages=[
-        'bootstrap_form',
-        'bootstrap_form/templates/bootstrap_form/',
-        'bootstrap_form/templatetags',
-    ],
+    packages=['bootstrap_form'],
     version=version,
     install_requires=[
         'Django>=1.5',
