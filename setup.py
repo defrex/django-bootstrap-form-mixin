@@ -25,7 +25,7 @@ setup(
     author_email='aron.jones@gmail.com',
     packages=[
         'bootstrap_form',
-        'bootstrap_form/templates',
+        'bootstrap_form/templates/bootstrap_form/',
         'bootstrap_form/templatetags',
     ],
     version=version,
