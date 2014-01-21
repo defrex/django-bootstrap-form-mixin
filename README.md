@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/defrex/django-bootstrap-form-mixin.png)](https://travis-ci.org/defrex/django-bootstrap-form-mixin)
-
 ### Django Bootstrap Form Mixin
 
-TODO
+This library is half-baked. For now at least, you're probably better off with [tzangms/django-bootstrap-form](https://github.com/tzangms/django-bootstrap-form).
