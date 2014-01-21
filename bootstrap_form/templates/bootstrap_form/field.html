@@ -1,0 +1,19 @@
+
+{% load bootstrap_form %}
+
+{% if field|is_string or field.is_hidden %}
+  {{ field }}
+{% else %}
+  <div class="form-group{% if field.errors %} has-error{% endif %} {{ field.name }}-group{% if field.field.widget.group_class %} widget-{{ field.field.widget.group_class }}{% endif %}">
+    <label for="id_{{ field.name }}" class="control-label">{{ field.label }}</label>
+    {% if field.help_text %}
+      <span class="help-block">{{ field.help_text }}</span>
+    {% endif %}
+    {{ field }}
+    {% if field.errors %}
+      {% for error in field.errors %}
+        <span class="help-block alert alert-danger">{{ error }}</span>
+      {% endfor %}
+    {% endif %}
+  </div>
+{% endif %}

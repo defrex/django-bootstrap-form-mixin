@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Form Examples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static %}
+    <link href="{% static "bootstrap.min.css" %}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container"><div class="panel panel-default"><div class="panel-body">
+
+      <form>
+        {{ form.as_bootstrap }}
+      </form>
+
+    </div></div></div>
+  </body>
+</html>

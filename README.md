@@ -3,7 +3,3 @@
 ### Django Bootstrap Form Mixin
 
 TODO
-
-#### Getting Started
-
-    $ pip install django-bootstrap-form-mixin
