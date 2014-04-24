@@ -1,7 +1,7 @@
 
 {% load bootstrap_form %}
 
-{% if field|is_string or field.is_hidden %}
+{% if field.is_hidden %}
   {{ field }}
 {% else %}
   <div class="form-group{% if field.errors %} has-error{% endif %} {{ field.name }}-group{% if field.field.widget.group_class %} widget-{{ field.field.widget.group_class }}{% endif %}">
