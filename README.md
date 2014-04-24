@@ -1,3 +1,19 @@
 ### Django Bootstrap Form Mixin
 
-This library is half-baked. For now at least, you're probably better off with [tzangms/django-bootstrap-form](https://github.com/tzangms/django-bootstrap-form).
+`form.py`
+
+    from django import forms
+
+    from bootstrap_form.forms import BootstrapForm
+
+
+    class ExampleForm(BootstrapForm, forms.Form):
+        text = forms.CharField()
+
+
+`my_template.html`
+
+      <form>
+        {{ form.as_bootstrap }}
+        <button type="submit">Submit</button>
+      </form>
