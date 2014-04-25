@@ -9,3 +9,8 @@ class ExampleForm(BootstrapForm, forms.Form):
         'class': 'extra-class',
         'group_class': 'extra-group-class',
     }))
+
+    radio = forms.ChoiceField(
+        choices=(('y', 'Yes'), ('n', 'No')),
+        widget=forms.RadioSelect(),
+    )
