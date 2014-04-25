@@ -13,11 +13,13 @@
     {% endif %}
 
     {% if field|is_radio %}
+      <ul class="list-inline">
       {% for radio in field %}
-        <label for="{{ radio.id_for_label }}" class="radio-inline">
-            {{ radio.tag }} {{ radio.choice_label }}
-        </label>
+        <li><label class="radio-inline">
+          {{ radio.tag }} {{ radio.choice_label }}
+        </label><li>
       {% endfor %}
+      </ul>
     {% else %}
       {{ field }}
     {% endif %}
